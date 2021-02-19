@@ -1,0 +1,23 @@
+cont = 0
+quant = int(input())
+
+while cont < quant:
+    linha = input().split()
+    p1 = linha[0]
+    p2 = linha[1]
+    p3= ""
+    cont2 = 0
+
+    while cont2 < len(p1) and cont2 < len(p2):
+        p3+= p1[cont2] + p2[cont2]
+        cont2 += 1
+
+    if cont2 < len(p1):
+        p3+= p1[cont2:]
+
+    if cont2 < len(p2):
+        p3 += p2[cont2:]
+    
+
+    print(p3)
+    cont += 1
