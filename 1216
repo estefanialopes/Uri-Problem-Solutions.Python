@@ -1,0 +1,17 @@
+total = 0
+contador = 0
+
+while True:
+    try:
+        nome = input()
+        distancia = float(input())
+
+        total = total + float(distancia)
+
+        contador = contador + 1
+
+    
+    except EOFError:
+        break
+
+print(round(total/contador, 1))
