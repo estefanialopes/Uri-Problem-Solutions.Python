@@ -1,0 +1,5 @@
+a, b, a1, b2 = [float(i) for i in input().split()]
+if (a1/a) <= (b2/b):
+    print('G')
+else:
+    print('A')
