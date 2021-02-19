@@ -1,0 +1,17 @@
+n =int(input())
+i = 0
+j=[]
+while i < n:
+    if i == 0 or i == 1:
+        j.append(i)
+     
+    if i > 1:
+        s = j[i-2] +j[i-1]
+      
+        j.append(s)
+    i = i + 1
+for x in range(0, n):
+    j[x] =str(j[x])
+  
+j = ' '.join(j)
+print(j)
