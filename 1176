@@ -1,0 +1,11 @@
+T=int(input())
+for i in range(T):
+    X=int(input())
+    fib=[0,1]
+    if X>1:
+        for y in range(2,X+1):
+           
+            fib.append(fib[y-2]+fib[y-1])
+        print('Fib({}) = {}'.format(X,fib[X]))
+    if X <=1:
+        print('Fib({}) = {}'.format(X,fib[X]))
