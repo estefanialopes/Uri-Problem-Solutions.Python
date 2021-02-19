@@ -1,0 +1,14 @@
+q = int(input())
+
+for i in range(q):
+    texto = input()
+    q = int(input())
+    nt= ''
+    for l in texto:
+        pos = ord(l)-q
+
+        if(pos < 65):
+            nt += chr(91-(65-pos))
+        else:
+            nt += chr(ord(l)-q)
+    print(nt)
