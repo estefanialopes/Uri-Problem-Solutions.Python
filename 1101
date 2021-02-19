@@ -1,0 +1,17 @@
+maior = 0
+menor = 0
+
+while True:
+        M, N = map(int, input(str()).split())
+   
+        if(M <= 0 or N <= 0):
+                break
+
+        menor, maior = sorted([M, N])
+   
+        soma = 0
+       
+        for i in range(menor,maior+1):
+            print(i, end=" ")
+            soma=soma+i
+        print("Sum={}".format(soma))
