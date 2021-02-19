@@ -1,0 +1,7 @@
+n = int(input())
+
+for i in range(n):
+    j = input()
+    j = len(j)
+
+    print("%.2f" %(j / 100))
