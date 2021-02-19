@@ -1,0 +1,22 @@
+n=int(input())
+L=[]
+for i in range (n):
+  aux=input().split(" ")
+  ax=int(aux[0])
+  ay=int(aux[1])
+  bx=int(aux[2])
+  by=int(aux[3])
+  cx=int(aux[4])
+  cy=int(aux[5])
+  dx=int(aux[6])
+  dy=int(aux[7])
+  rx=int(aux[8])
+  ry=int(aux[9])
+
+   
+  if(rx >= ax and rx <= bx and rx >= dx and rx <= cx and ry >= ay and ry <= dy and ry >= by and ry <= cy):
+       L+=[1]
+  else:
+       L+=[0]
+for i in L:
+  print(i)  
