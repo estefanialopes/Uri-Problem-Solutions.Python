@@ -1,0 +1,12 @@
+S = input()
+bits = 0
+for i in range(len(S)):
+    if S[i] == '1':
+        bits += 1
+
+if bits % 2 == 1:
+    S += '1'
+else:
+    S += '0'
+
+print(S)
