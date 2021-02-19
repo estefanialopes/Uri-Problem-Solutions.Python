@@ -1,0 +1,11 @@
+n = int(input())
+
+for i in range(n):
+    x = input().split()
+
+    i,b= x
+
+    if i == 'Thor':
+        print('Y')
+    else:
+        print('N')
